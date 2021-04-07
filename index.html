@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image slider</title>
+    <!-- VueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- mio css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- mio js -->
+    <script type="text/javascript" src="script.js"></script>       
+  </head>
+
+  <body>
+
+    <div id="app" class="container">
+
+
+      <!-- schermata contenitore -->
+      <div class="slider-wrapper">
+
+        <!-- freccia sx -->
+        <div id="left"  class="direction" @click="prevPic">
+          <i class="fas fa-angle-left"></i>
+        </div>
+
+        <!-- immagini -->
+        <div class="img-container">
+          <img :src="imagePath+imageNumber+imageFormat" alt="">
+        </div>
+        
+
+        <!-- freccia dx -->
+        <div id="right" class="direction" @click="nextPic">
+          <i class="fas fa-angle-right"></i>
+        </div>
+
+        <!-- indicatore foto in basso  +++BONUS+++ -->
+        <div class="cursor">
+          <div class="point active first pic-1">
+
+          </div>
+          <div class="point pic-2">
+
+          </div>
+          <div class="point pic-3">
+
+          </div>
+          <div class="point pic-4 last">
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
