@@ -1,13 +1,16 @@
 function init(){
     new Vue({
         el: '#app', 
+
         data: {
             show : "active",          
             imageNumber : 1,
             imageFormat: ".jpg",
             imagePath : "./img/paesaggio-",
+            bgClass: "",
         },
-        methods: {
+
+        methods: {           
             nextPic: function(){
                 if(this.imageNumber == 4){
                     this.imageNumber = 1;
@@ -21,6 +24,9 @@ function init(){
                 } else {
                     this.imageNumber = this.imageNumber-1;
                 }
+            },
+            
+                
             }
         }    
             

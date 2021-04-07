@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image slider</title>
+    <title>VUE Image slider</title>
     <!-- VueJS -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- jquery -->
@@ -42,18 +42,14 @@
 
         <!-- indicatore foto in basso  +++BONUS+++ -->
         <div class="cursor">
-          <div class="point active first pic-1">
+          <div class="point" :class="bgClass" @click="cursorColor"></div>
 
-          </div>
-          <div class="point pic-2">
+          <div class="point" :class="bgClass"></div>
 
-          </div>
-          <div class="point pic-3">
+          <div class="point" :class="bgClass"></div>
 
-          </div>
-          <div class="point pic-4 last">
-
-          </div>
+          <div class="point" :class="bgClass"></div>
+          
         </div>
 
       </div>
