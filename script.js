@@ -27,9 +27,14 @@ function init(){
             },
             slideShow: function(){
 
-                setInterval(this.nextPic,2000);
+                this.clock = setInterval(this.nextPic,2000);
                 // setInterval( ()=>this.nextPic(),2000) ;
+                
             },
+            slideStop: function(){
+                clearInterval(this.clock);
+            },
+            
         }      
             
     })
