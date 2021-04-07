@@ -42,7 +42,7 @@
 
         <!-- indicatore foto in basso  +++BONUS+++ -->
         <div class="cursor">
-          <div v-for="(elem,index) in 4" :class="index == imageNumber ? 'point active' : 'point'" :key="index" @click="selectImg(index)">{{index}}</div>
+          <div v-for="(elem,index) in maxNum" :class="index == imageNumber ? 'point active' : 'point'" :key="index" @click="selectImg(index)">{{index}}</div>
           
         </div>
 
