@@ -25,8 +25,18 @@ function init(){
                     this.imageNumber = this.imageNumber-1;
                 }
             },
-            
-        }    
+            slideShow: function(){
+                const self = this;
+                const clock = setInterval(function(){
+                    if(self.imageNumber == 4){
+                        self.imageNumber = 1;
+                    } else {
+                        self.imageNumber = self.imageNumber+1;
+                    }
+                    return clock; 
+                },2000)
+            },
+        }      
             
     })
 }
