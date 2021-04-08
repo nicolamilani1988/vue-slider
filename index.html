@@ -42,7 +42,7 @@
 
         <!-- indicatore foto in basso  +++BONUS+++ -->
         <div class="cursor">
-          <div v-for="(elem,index) in maxNum" :class="index == imageNumber ? 'point active' : 'point'" :key="index" @click="selectImg(index)"></div>       
+          <div v-for="elem in maxNum" :class="elem == imageNumber ? 'point active' : 'point'" :key="elem" @click="selectImg(elem)">{{elem}}</div>       
         </div>
 
       </div>
@@ -51,7 +51,7 @@
 
         <button @click="slideShow">PLAY SLIDESHOW</button>
         <button @click="slideStop">STOP SLIDESHOW</button>
-        
+
       </div>
       
 

@@ -3,21 +3,21 @@ function init(){
         el: '#app', 
 
         data: {
-            imageNumber : 0,
+            imageNumber : 1,
             maxNum : 4 // valore da aumentare se aggiungo foto
         },
 
         methods: {           
             nextPic: function(){
-                if(this.imageNumber == (this.maxNum-1)){
-                    this.imageNumber = 0;
+                if(this.imageNumber == (this.maxNum)){
+                    this.imageNumber = 1;
                 } else {
                     this.imageNumber = this.imageNumber+1;
                 }              
             },
             prevPic: function(){
-                if(this.imageNumber == 0){
-                    this.imageNumber = (this.maxNum-1);
+                if(this.imageNumber == 1){
+                    this.imageNumber = (this.maxNum);
                 } else {
                     this.imageNumber = this.imageNumber-1;
                 }
@@ -29,8 +29,8 @@ function init(){
             slideStop: function(){
                 clearInterval(this.clock);
             },
-            selectImg: function(index){
-                this.imageNumber = index;
+            selectImg: function(elem){
+                this.imageNumber = elem;
             }
             
         }      
