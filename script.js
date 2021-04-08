@@ -3,12 +3,7 @@ function init(){
         el: '#app', 
 
         data: {
-            show : "active",          
             imageNumber : 0,
-            imageFormat: ".jpg",
-            imagePath : "./img/paesaggio-",
-            bgClass: "",
-            point: "point",
             maxNum : 4 // valore da aumentare se aggiungo foto
         },
 
