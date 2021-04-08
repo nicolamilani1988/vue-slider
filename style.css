@@ -52,11 +52,12 @@
 }
 
 .point{
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border: 5px solid red;
   margin: 5px;
+  border-radius: 50%;
 }
 
 .active{
