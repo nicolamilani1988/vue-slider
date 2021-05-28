@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body{
+  background-image: url('./img/bg.jpg');
+  background-size: contain;
+}
+
 .container{
   padding: 50px 0;
 }
@@ -16,11 +21,12 @@
 }
 
 .direction{
-  font-size: 100px;
-  color:red;
+  font-size: 80px;
+  color:white;
   position: absolute;
   top: 50%;
   transform: translate(0,-50%);
+  cursor: pointer;
 }
 
 #left{
@@ -55,16 +61,25 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  border: 5px solid red;
+  border: 5px solid blue;
   margin: 5px;
   border-radius: 50%;
 }
 
 .active{
-  background-color: red;
+  background-color: white;
 }
 
 .automatic-play{
   margin-top: 30px;
   text-align: center;
+}
+
+.automatic-play button{
+  background-color: blue;
+  color:white;
+  padding: 20px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid blue;
 }
